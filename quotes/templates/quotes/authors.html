@@ -1,0 +1,12 @@
+{% extends "quotes/base.html" %}
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+        {%for author in authors%}
+        <a href="{% url 'quotes:author_description' author.fullname %}">
+            <li class="list-group-item">{{author.fullname}}</li>
+        </a>
+        {%endfor%}
+    </ul>
+</div>
+{% endblock %}
