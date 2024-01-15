@@ -3,6 +3,7 @@ from pymongo import MongoClient
 # from pymongo.server_api import ServerApi
 import configparser
 import pathlib
+from pymongo.server_api import ServerApi
 
 
 file_config = pathlib.Path(__file__).parent.joinpath("config.ini")
@@ -22,6 +23,5 @@ uri = f"mongodb+srv://{username}:{password}@{db_name}.{domain}/?retryWrites=true
 
 
 def get_mongodb():
-    # client = MongoClient(uri, server_api=ServerApi("1"))
-    client = MongoClient(uri, ssl=True)
+    client = MongoClient(uri, server_api=ServerApi("1"))
     return client[db]

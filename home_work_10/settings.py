@@ -85,7 +85,7 @@ WSGI_APPLICATION = "home_work_10.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "my_home_work",
+        "NAME": "home_work",
         "USER": "postgres",
         "PASSWORD": "pass",
         "HOST": "localhost",
