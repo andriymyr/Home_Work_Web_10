@@ -1,3 +1,4 @@
+import bson
 from bson.objectid import ObjectId
 from django import template
 from ..utilite import get_mongodb

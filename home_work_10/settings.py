@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "home_work.wsgi.application"
+WSGI_APPLICATION = "home_work_10.wsgi.application"
 
 
 # Database
@@ -85,10 +85,10 @@ WSGI_APPLICATION = "home_work.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "quotes-postgres",
+        "NAME": "my_home_work",
         "USER": "postgres",
         "PASSWORD": "pass",
-        "HOST": "172.17.0.2",
+        "HOST": "localhost",
         "PORT": "",
     }
 }
